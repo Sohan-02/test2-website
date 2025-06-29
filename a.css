@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at center, #5a189a, #1e1e2f, #000000);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 80px 20px rgba(157, 78, 221, 0.4); /* purple glow */
+  text-align: center;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(157, 78, 221, 0.5);
+}
+
+.profile h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.profile p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.links {
+  display: grid;
+  gap: 15px;
+}
+
+.link-card {
+  display: block;
+  padding: 15px;
+  background: #eee;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s ease;
+}
+
+.link-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(157, 78, 221, 0.6);
+}
+
+/* Platform-specific styles */
+.github { background-color: #333; color: white; }
+.twitter { background-color: #1DA1F2; color: white; }
+.youtube { background-color: #FF0000; color: white; }
+.linkedin { background-color: #0077B5; color: white; }
